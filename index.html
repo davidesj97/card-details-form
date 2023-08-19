@@ -12,10 +12,39 @@
   <main class="container-fluid">
     <div class="row main-container">
       <div class="col-4 card-container">
-        <div class="card-front"></div>
-        <div class="card-back"></div>
+        <div class="card-front">
+
+        </div>
+        <div class="card-back">
+
+        </div>
       </div>
-      <div class="col-8 form-container"></div>
+      <div class="col-8 form-container d-flex align-items-center ">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputName1" class="form-label1">NAME OWNER :</label>
+            <input type="text" class=" form-control" id="exampleInputName1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">---------</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputNumber1" class="form-label2">CARD NUMBER :</label>
+            <input type="number" class="form-control" id="exampleInputNumber1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputExp" class="form-label3">EXP. DATE (MM / YY)</label>
+            <input type="number" class="form-control" id="exampleInputExp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputCVC" class="form-label4">CVC</label>
+            <input type="number" class="form-control" id="exampleInputCVC">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">No soy un Robot</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
   </main>
 </body>
