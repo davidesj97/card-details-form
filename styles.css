@@ -5,6 +5,47 @@
   height: 100vh;
 }
 
+.card-container .card-back {
+  position: absolute;
+  left: 20%;
+  border: 0;
+  padding: 0;
+  background-color: #cecece;
+  height: 230px;
+  width: 400px;
+}
+.card-back .card-body {
+  width: 100%;
+  padding: 0;
+}
+.card-back .card-stripe {
+  background-color: #323232;
+  height: 44px;
+  margin-top: 28px;
+}
+.card-back .card-cvc {
+  background-color: #a8a9b0;
+  width: 80%;
+  height: 32px;
+  margin: 28px auto 0;
+  text-align: end;
+  padding-right: 16px;
+}
+
+.card-back .card-cvc .cvc{
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+.skeleton {
+  height: 4px;
+}
+.skeleton .placeholder{
+  font-size: 4px;
+}
+
 .form-conatiner {
   background-color: #ffffff;
   height: 50vh;
@@ -32,4 +73,23 @@ form{
 }
 #exampleCheck1{
   
+  height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .card-container {
+    height: 100vh;
+    padding: 20px 0;
+  }
+  .card-container .card-back {
+    width: 450px;
+    top: 40%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-container .card-back {
+    width: 90%;
+  }
 }
