@@ -51,31 +51,57 @@
   height: 50vh;
 }
 form{
-   border: 1px solid black; 
+   /* border: 1px solid black;  */
    margin: auto;
-   width:75%;
+   padding: 50px;
 }
 #exampleInputName1{
-  background-color: rgb(244, 233, 219);
-  width: 60%;
+  
+  
 }
 #exampleInputNumber1{
-  background-color: rgb(143, 255, 255);
-  width: 60%;
-}
-#exampleInputExp{
-  background-color: bisque;
-  width: 10%;
-}
-#exampleInputCVC{
-  background-color:rgb(103, 188, 188);
-  width: 10%;
-}
-#exampleCheck1{
+ 
   
-  height: 100vh;
+}
+#InputExp{
+ 
+  
+}
+#InputCVC{
+ 
+}
+.btn.btn-primary {
+  background-color: rgb(43, 1, 106);
 }
 
+@media (max-width: 877px) {
+  #InputMonth {
+    height: 37px;
+    width: 80px;
+    margin-right: 80%;
+  }
+  #InputYear{
+    height: 37px;
+    width: 80px;
+    margin-left: 80%;
+  }
+  #InputCVC{
+    height: 37px;
+    width: 80px;
+    margin-left: 80px;
+  }
+  #CVC{
+    margin-left: 80px;
+  }
+  
+}
+@media (max-width: 640px){
+  form {
+    height: 100vh;
+    padding: 25px 0px;
+    
+  }
+}
 @media (max-width: 991px) {
   .card-container {
     height: 100vh;
