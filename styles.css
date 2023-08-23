@@ -108,13 +108,13 @@ form{
     padding: 20px 0;
   }
   .card-container .card-back {
+    position: initial;
     width: 450px;
-    top: 40%;
-    left: 5%;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 500px) {
   .card-container .card-back {
     width: 90%;
   }
