@@ -8,7 +8,7 @@
   position:absolute;
   top: 10%;
   left: 15%;
-  border-radius: 5%;
+  border-radius: 2%;
   padding: 0;
   margin-top: 60px;
   /* background-color: #cecece; */
@@ -132,6 +132,7 @@ form{
    padding: 50px;
    width: 50%;
 }
+
 .btn.btn-primary {
   background-color: rgb(43, 1, 106);
 }
@@ -157,12 +158,17 @@ form{
   }
   
 }
-@media (max-width: 830px){
+@media (max-width: 991px){
   form {
     height: 100vh;
-    padding: 25px 50px;
-    margin-top: 300px;
-    margin-left: 10px;
+    position: absolute;
+    top: 100%;
+    /* margin-top: 300px; */
+    /* margin-left: 10px; */
+   margin: auto;
+   padding: 25px 25px;
+   width: 95%;
+   
   }
 }
 @media (max-width: 991px) {
