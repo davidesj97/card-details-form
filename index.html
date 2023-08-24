@@ -21,41 +21,51 @@
     <main class="container-fluid">
       <div class="row main-container">
         <div class="col-lg-4 col-sm-12 card-container d-flex align-items-center">
-          <div class="card-front"></div>
-          <div class="card-back">
-            <div class="card-body">
-              <div class="card-stripe"></div>
-              <div class="card-cvc">
-                <span class="cvc">XXX</span>
-              </div>
-              <div class="skeletons d-flex flex-column align-items-center mt-3">
-                <div class="skeleton col-8 d-flex flex-row my-1">
-                  <span class="placeholder col-5 mx-1"></span>
-                  <span class="placeholder col-2 mx-1"></span>
-                  <span class="placeholder col-2 mx-1"></span>
-                  <span class="placeholder col-1 mx-1"></span>
+          <div class="row">
+            <div class="card-front">
+              <div class="logo"></div>
+              <div class="log1"></div>
+              <snap id="CardNumb"> JAJA</snap>
+              <snap id="CardUser">Pedro</snap>
+              <span id="CardCvc">Cvc</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-back">
+              <div class="card-body">
+                <div class="card-stripe"></div>
+                <div class="card-cvc">
+                  <span class="cvc">XXX</span>
                 </div>
-                <div class="skeleton col-8 d-flex flex-row my-1">
-                  <span class="placeholder col-3 mx-1"></span>
-                  <span class="placeholder col-4 mx-1"></span>
-                  <span class="placeholder col-3 mx-1"></span>
-                </div>
-                <div class="skeleton col-8 d-flex flex-row my-1">
-                  <span class="placeholder col-3 mx-1"></span>
-                  <span class="placeholder col-6 mx-1"></span>
-                  <span class="placeholder col-1 mx-1"></span>
-                </div>
-                <div class="skeleton col-8 d-flex flex-row my-1">
-                  <span class="placeholder col-1 mx-1"></span>
-                  <span class="placeholder col-4 mx-1"></span>
-                  <span class="placeholder col-4 mx-1"></span>
-                  <span class="placeholder col-1 mx-1"></span>
+                <div class="skeletons d-flex flex-column align-items-center mt-3">
+                  <div class="skeleton col-8 d-flex flex-row my-1">
+                    <span class="placeholder col-5 mx-1"></span>
+                    <span class="placeholder col-2 mx-1"></span>
+                    <span class="placeholder col-2 mx-1"></span>
+                    <span class="placeholder col-1 mx-1"></span>
+                  </div>
+                  <div class="skeleton col-8 d-flex flex-row my-1">
+                    <span class="placeholder col-3 mx-1"></span>
+                    <span class="placeholder col-4 mx-1"></span>
+                    <span class="placeholder col-3 mx-1"></span>
+                  </div>
+                  <div class="skeleton col-8 d-flex flex-row my-1">
+                    <span class="placeholder col-3 mx-1"></span>
+                    <span class="placeholder col-6 mx-1"></span>
+                    <span class="placeholder col-1 mx-1"></span>
+                  </div>
+                  <div class="skeleton col-8 d-flex flex-row my-1">
+                    <span class="placeholder col-1 mx-1"></span>
+                    <span class="placeholder col-4 mx-1"></span>
+                    <span class="placeholder col-4 mx-1"></span>
+                    <span class="placeholder col-1 mx-1"></span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
-        <div class="col-8 align-self-center d-flex ">
+        <div class="col-8 d-flex align-items-center">
           <form>
             <div class="mb-3">
               <label for="exampleInputName1" class="form-label1">CARD HODER NAME</label>
@@ -69,22 +79,22 @@
             </div>
             <div class="mb-3">
               <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                   <label for="exampleInputExp" class="form-label3" id="">EXP. DATE (MM/YY)</label>
                 </div>
-                  <div class="col-5">
+                  <div class="col-6">
                   <label for="exampleInputExp" class="form-label3">CVC</label>
                   </div>
               </div>
 
               <div class="row" >
-                <div class="col-2">
+                <div class="col-3">
                   <input type="number" class="form-control" id="inputMonth">
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                   <input type="number" class="form-control" id="inputYear">
                 </div>
-                <div class="col-2">
+                <div class="col-6">
                   <input type="number" class="form-control" id="inputCVC">
                 </div>
               </div>
