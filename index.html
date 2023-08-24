@@ -27,7 +27,7 @@
               <div class="log1"></div>
               <span id="cardNumber">0000 0000 0000 0000</span>
               <span id="cardOwner">Oscar Jiménez</span>
-              <span id="CardCvc">00/00</span>
+              <div id="cardExpireDate"><span id="cardMonth">00</span>/<span id="cardYear">00</span></div>
             </div>
           </div>
           <div class="row">
@@ -89,10 +89,14 @@
 
               <div class="row" >
                 <div class="col-3">
-                  <input type="number" class="form-control" id="inputMonth" placeholder="MM">
+                  <select name="months" class="form-control"  id="monthSelect">
+                    <option value="" disabled selected hidden>MM</option>
+                  </select>
                 </div>
                 <div class="col-3">
-                  <input type="number" class="form-control" id="inputYear" placeholder="YY">
+                  <select name="years" class="form-control"  id="yearSelect">
+                    <option value="" disabled selected hidden>YY</option>
+                  </select>
                 </div>
                 <div class="col-6">
                   <input type="number" class="form-control" id="inputCVC" placeholder="e.g. 123">
