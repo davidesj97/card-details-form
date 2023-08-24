@@ -1,8 +1,10 @@
 // Input card owner
 const inputCardOwner = document.querySelector('#inputCardOwner');
+const cardOwner = document.querySelector('#cardOwner');
 
 // Input card number
 const inputCardNumber = document.querySelector('#inputCardNumber');
+const cardNumber = document.querySelector('#cardNumber');
 
 // Input month
 const inputMonth = document.querySelector('#inputMonth');
@@ -28,4 +30,24 @@ const toggleCVC = (element) => {
   }
 }
 
-inputCVC.addEventListener('input', toggleCVC)
+const toggleCardOwner = (element) => {
+  if(element.target.value.length !== 0) {
+    let value = element.target.value;
+    cardOwner.innerText = value;
+  } else {
+    cardOwner.innerText = "Oscar Jiménez";
+  }
+}
+
+const toggleCardNumber = (element) => {
+  if(element.target.value.length !== 0) {
+    let value = element.target.value;
+    cardNumber.innerText = value;
+  } else {
+    cardNumber.innerText = "0000 0000 0000 0000";
+  }
+}
+
+inputCardOwner.addEventListener('input', toggleCardOwner);
+inputCardNumber.addEventListener('input', toggleCardNumber);
+inputCVC.addEventListener('input', toggleCVC);

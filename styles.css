@@ -41,7 +41,7 @@
   border-radius: 50%;
 
 }
-#CardNumb {
+#cardNumber {
   background-color: aqua;
   display: flex;
   justify-content: left;
@@ -52,7 +52,7 @@
   top: 60%;
   left: 10%;
 }
-#CardUser{
+#cardOwner{
   color: white;
   font-size: small;
   background-color: rgb(241, 147, 23);
