@@ -69,7 +69,8 @@
   top: 80%;
   left: 10%;
 }
-#CardCvc{
+#cardExpireDate{
+  color: rgb(18, 18, 18);
   font-size: small;
   font-family: inherit;
   /* background-color: rgb(58, 255, 40); */
@@ -144,7 +145,7 @@ form{
 }
 
 @media (max-width: 830px) {
-  #InputMonth {
+  #monthSelect {
     height: 37px;
     width: 80px;
     margin-right: 80%;

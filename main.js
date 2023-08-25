@@ -7,10 +7,12 @@ const inputCardNumber = document.querySelector('#inputCardNumber');
 const cardNumber = document.querySelector('#cardNumber');
 
 // Input month
-const inputMonth = document.querySelector('#inputMonth');
+const cardMonth = document.querySelector('#cardMonth');
+const monthSelect = document.querySelector('#monthSelect');
 
 // Input year
-const inputYear = document.querySelector('#inputYear');
+const yearSelect = document.querySelector('#yearSelect');
+const cardYear = document.querySelector('#cardYear');
 
 // Input CVC
 const inputCVC = document.querySelector('#inputCVC');
@@ -48,6 +50,41 @@ const toggleCardNumber = (element) => {
   }
 }
 
+const toggleCardMonth = (element) => {
+  let value = element.target.value;
+  cardMonth.innerText = value;
+}
+
+const toggleCardYear = (element) => {
+  cardYear.innerText = element.target.value;
+}
+
+for(let month = 1; month <= 12; month++) {
+  const option = document.createElement('option');
+  const stringMonth = `${month}`;
+  if(stringMonth.length < 2) {
+    option.value = `0${month}`;
+  } else {
+    option.value = `${month}`;
+  }
+  option.innerText = option.value;
+  monthSelect.appendChild(option);
+}
+
+for(let year = 0; year <= 99; year++) {
+  const option = document.createElement('option');
+  const stringYear = `${year}`;
+  if(stringYear.length < 2) {
+    option.value = `0${year}`;
+  } else {
+    option.value = `${year}`;
+  }
+  option.innerText = option.value;
+  yearSelect.appendChild(option);
+}
+
 inputCardOwner.addEventListener('input', toggleCardOwner);
 inputCardNumber.addEventListener('input', toggleCardNumber);
+monthSelect.addEventListener('change', toggleCardMonth);
+yearSelect.addEventListener('change', toggleCardYear);
 inputCVC.addEventListener('input', toggleCVC);
