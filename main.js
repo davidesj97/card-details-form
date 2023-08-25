@@ -42,11 +42,29 @@ const toggleCardOwner = (element) => {
 }
 
 const toggleCardNumber = (element) => {
-  if(element.target.value.length !== 0) {
-    let value = element.target.value;
-    cardNumber.innerText = value;
+  let value = element.target.value.replaceAll(" ", "");
+  const lastChar = value.charAt(value.length - 1);
+  const regex = /[0-9]/;
+  if(regex.test(lastChar)){
+    if(value.length <= 16) {
+      if(value.length !== 0) {
+        let number = "";
+        for(let letter = 0; letter < value.length; letter++) {
+          if(letter % 4 === 0) {
+            number = number + " ";
+          }
+          number = number + value[letter];
+        }
+        element.target.value = number;
+        cardNumber.innerText = number;
+      } else {
+        cardNumber.innerText = "0000 0000 0000 0000";
+      }
+    } else {
+      element.target.value = element.target.value.slice(0,20);
+    }
   } else {
-    cardNumber.innerText = "0000 0000 0000 0000";
+    element.target.value = element.target.value.slice(0,-1);
   }
 }
 
