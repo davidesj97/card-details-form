@@ -168,8 +168,6 @@ form{
 @media (max-width: 991px){
   form {
     /* height: 100vh; */
-    position: absolute;
-    top: 63%;
     margin: auto;
     padding: 25px 25px;
     width: 95%;
@@ -177,7 +175,7 @@ form{
 }
 @media (max-width: 991px) {
   .card-container {
-    height: 55vh;
+    height: 45vh;
     padding: 20px 0;
   }
   .card-container .card-back {
@@ -185,13 +183,17 @@ form{
     width: 450px;
     margin: 0 auto;
   }
+  .form-container {
+    height: 50vh;
+  }
 }
 @media(max-width: 500px){
   .card-container .card-front{
-    width: 90%;
+    width: 85%;
+    height: 200px;
     position:absolute;
     z-index: 2;
-    top: 150px;
+    top: 80px;
     left: 2%;
     border-radius: 2%;
     padding: 0;
@@ -200,12 +202,29 @@ form{
 }
 @media (max-width: 500px) {
   .card-container .card-back {
-    width: 90%;
+    width: 85%;
+    height: 200px;
     position:absolute;
-    top: 1px;
+    top: 0px;
     left: 10%;
     border-radius: 2%;
     padding: 0;
-    margin-top: 60px;
+    margin-top: 20px;
+  }
+  .card-back .card-stripe {
+    height: 32px;
+    margin-top: 24px;
+  }
+  .card-back .card-cvc {
+    width: 80%;
+    height: 28px;
+    margin: 20px auto 0;
+    text-align: end;
+    padding-right: 16px;
+  }
+  .card-back .card-cvc .cvc{
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: 28px;
   }
 }
