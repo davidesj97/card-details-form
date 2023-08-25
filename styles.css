@@ -7,7 +7,7 @@
 .card-container .card-front{
   position:absolute;
   top: 10%;
-  left: 15%;
+  left: 5%;
   border-radius: 2%;
   padding: 0;
   margin-top: 60px;
@@ -42,7 +42,10 @@
 
 }
 #cardNumber {
-  background-color: aqua;
+  /* background-color: aqua; */
+  color: azure;
+  font-family: inherit;
+  font-size: 20px;
   display: flex;
   justify-content: left;
   padding: 0;
@@ -53,9 +56,10 @@
   left: 10%;
 }
 #cardOwner{
-  color: white;
   font-size: small;
-  background-color: rgb(241, 147, 23);
+  /* background-color: rgb(241, 147, 23); */
+  font-family: inherit;
+  color: azure;
   display: flex;
   justify-content: left;
   padding: 5px;
@@ -66,9 +70,10 @@
   left: 10%;
 }
 #CardCvc{
-  color: rgb(18, 18, 18);
   font-size: small;
-  background-color: rgb(58, 255, 40);
+  font-family: inherit;
+  /* background-color: rgb(58, 255, 40); */
+  color: azure;
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -82,6 +87,7 @@
 
 .card-container .card-back {
   position: absolute;
+  top: 60%;
   left: 20%;
   border: 0;
   padding: 0;
@@ -127,10 +133,10 @@
   height: 50vh;
 }
 form{
-   /* border: 1px solid black;  */
    margin: auto;
    padding: 50px;
    width: 50%;
+   font-family: inherit;
 }
 
 .btn.btn-primary {
@@ -160,20 +166,17 @@ form{
 }
 @media (max-width: 991px){
   form {
-    height: 100vh;
+    /* height: 100vh; */
     position: absolute;
-    top: 100%;
-    /* margin-top: 300px; */
-    /* margin-left: 10px; */
-   margin: auto;
-   padding: 25px 25px;
-   width: 95%;
-   
+    top: 110%;
+    margin: auto;
+    padding: 25px 25px;
+    width: 95%;
   }
 }
 @media (max-width: 991px) {
   .card-container {
-    height: 100vh;
+    height: 110vh;
     padding: 20px 0;
   }
   .card-container .card-back {
@@ -182,9 +185,25 @@ form{
     margin: 0 auto;
   }
 }
-
+@media(max-width: 500px){
+  .card-container .card-front{
+    width: 90%;
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 2%;
+    padding: 0;
+    margin-top: 60px;
+  }
+}
 @media (max-width: 500px) {
   .card-container .card-back {
     width: 90%;
+    position:absolute;
+    top: 50%;
+    left: 5%;
+    border-radius: 2%;
+    padding: 0;
+    margin-top: 60px;
   }
 }
